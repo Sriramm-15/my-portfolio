@@ -1,0 +1,179 @@
+/* ======== Tablet Styles (<= 768px) ======== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 1rem 3rem;
+    gap: 2rem;
+  }
+
+  .hero-content {
+    margin-right: 0;
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .projects-section,
+  .skills-section,
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+/* ======== Mobile Styles (<= 480px) ======== */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 5rem 0.5rem 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-section,
+  .skills-section,
+  .contact-section {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .skill-card {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ======== Extra Small Mobile (<= 320px) ======== */
+@media (max-width: 320px) {
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 0.5rem;
+  }
+}
+/* Responsive layout */
+@media (min-width: 768px) {
+  .github-stats-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .github-card {
+    flex: 1 1 30%;
+  }
+}
